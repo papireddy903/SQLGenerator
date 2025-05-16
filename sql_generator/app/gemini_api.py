@@ -13,8 +13,8 @@ def get_sql_query_from_nl(user_input):
     """
     Given a natural language query, returns the generated SQL query as a string.
     """
-    tables_file = os.path.join(settings.BASE_DIR, 'app', 'data', 'temp_tables.json')
-    relationships_file = os.path.join(settings.BASE_DIR, 'app', 'data', 'temp_relationships.json')
+    tables_file = os.path.join(settings.BASE_DIR,'static','data', 'temp_tables.json')
+    relationships_file = os.path.join(settings.BASE_DIR, 'static', 'data', 'temp_relationships.json')
     client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY", "AIzaSyDJF9xph8zBm-KHmDNdYw4vfixGzx-D8QA"))
     tables_info = load_json_file(tables_file)
     tables_relationships = load_json_file(relationships_file)
