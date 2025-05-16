@@ -1,0 +1,9 @@
+[
+  {
+    "Table1": "EmpPers",
+    "Table2": "EmpComp",
+    "Join Condition": "Eep.eepEEID=Eec.EecEEID",
+    "Type of Join": "EmpPers Left Join EmpComp"
+  }
+]
+  

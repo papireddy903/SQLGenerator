@@ -1,0 +1,63 @@
+[
+    {
+        "Table Name": "EmpPers",
+        "Important Columns": [
+            "EepEEID",
+            "EepDateOfBirth",
+            "EepNameFirst",
+            "EepNameLast",
+            "EepOriginCountry",
+            "EepSSN",
+            "EepPersonId",
+            "EepAddressCity",
+            "EepAddressState",
+            "EepAddressCountry",
+            "EepAddressEmail",
+            "EepMaritalStatus",
+            "EepPhoneHomeNumber",
+            "eepAddressZipCode"
+        ],
+        "Column Prefix": "Eep",
+        "Topics": [
+            "Employee Personal Details",
+            "Workers",
+            "Person",
+            "Identity",
+            "Personal Information",
+            "Social Security Number (SSN)",
+            "Date of Birth",
+            "Address",
+            "Email"
+        ],
+        "Modified Description": "Contains personal details for each employee, including name, SSN, date of birth, address, email, and phone number. One record per employee, regardless of multiple company affiliations."
+    },
+    {
+        "Table Name": "EmpComp",
+        "Important Columns": [
+            "EecCOID",
+            "EecEEID",
+            "EecEmpNo",
+            "EecEEType",
+            "EecEmplStatus",
+            "EecHourlyPayRate",
+            "EecJobCode",
+            "EecJobGroupCode",
+            "EecJobtitle",
+            "EecPayGroup",
+            "EecPayPeriod",
+            "EecPeriodPayRate",
+            "EecSupervisorID",
+            "EecTotalAnnSalary",
+            "EecLocation",
+            "EecDateInJob",
+            "EecDateLastPayDatePaid",
+            "EecDateLastWorked",
+            "EecDateOfBenefitSeniority",
+            "EecDateOfLastHire",
+            "EecDateOfOriginalHire",
+            "EecDateOfRetirement",
+            "EecDateOfSeniority",
+            "EecDateOfTermination"
+        ]
+    }
+]
