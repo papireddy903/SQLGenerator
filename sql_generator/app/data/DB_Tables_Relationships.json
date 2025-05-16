@@ -1,0 +1,87 @@
+[
+  {
+    "Table1": "EmpPers",
+    "Table2": "EmpComp",
+    "Join Condition": "Eep.eepEEID=Eec.EecEEID",
+    "Type of Join": "EmpPers Left Join EmpComp"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "EmpDed",
+    "Join Condition": "ec.EecEEID=ed.EedEEID and ec.EecCOID=ed.EedCOID",
+    "Type of Join": "EmpComp Left Join EmpDed"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "EmpDirDp",
+    "Join Condition": "ec.EecEEID=ed.EddEEID and ec.EecCOID=ed.EddCOID",
+    "Type of Join": "EmpComp Left Join EmpDirDp"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "EmpEarn",
+    "Join Condition": "ec.EecEEID=ee.EeeEEID and ec.EecCoID=ee.EeeCoID",
+    "Type of Join": "EmpComp Left Join EmpEarn"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "EmpTax",
+    "Join Condition": "ec.EecEEID=et.EetEEID and ec.EecCoID=et.EetCoID",
+    "Type of Join": "EmpComp Left Join EmpTax"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "Company",
+    "Join Condition": "Eec.EecCoID=Cmp.CmpCoID",
+    "Type of Join": "Emp Left Join EmpComp, EmpComp Left Join Company"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "Location",
+    "Join Condition": "Eec.EecLocation=Loc.LocCode",
+    "Type of Join": "Emp Left Join EmpComp, EmpComp Left Join Location"
+  },
+  {
+    "Table1": "EmpComp, EmpPers",
+    "Table2": "Contacts",
+    "Join Condition": "ep.eepEEID=ec.EecEEID and ep.eepEEID=Con.ConEEID",
+    "Type of Join": "EmpPers Left Join EmpComp, EmpPers Left Join Contacts"
+  },
+  {
+    "Table1": "EmpDed",
+    "Table2": "DedCode",
+    "Join Condition": "Eed.EedDedCode=Ded.DedDedCode",
+    "Type of Join": "EmpDed Left Join DedCode"
+  },
+  {
+    "Table1": "EmpEarn",
+    "Table2": "EarnCode",
+    "Join Condition": "Eee.EeeEarnCode=Ern.ErnEarncode",
+    "Type of Join": "EmpEarn Left Join EarnCode"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "JobCode",
+    "Join Condition": "Eec.EecJobCode=Jbc.JbcJobCode",
+    "Type of Join": "EmpComp Left Join JobCode"
+  },
+  {
+    "Table1": "EmpTax",
+    "Table2": "TaxCode",
+    "Join Condition": "Eet.EetTaxCode=Ctc.CtcTaxCode and Eet.EetCoID=Ctc.CtcCOID",
+    "Type of Join": "EmpTax Left Join TaxCode"
+  },
+  {
+    "Table1": "EmpComp",
+    "Table2": "EmpHStat",
+    "Join Condition": "EmpComp.EecCOID = EmpHStat.EshCOID",
+    "Type of Join": "EmpComp Left Join EmpHStat"
+  },
+  {
+    "Table1": "EmpPers",
+    "Table2": "TaxCode",
+    "Join Condition": "Eet.EetTaxCode=Ctc.CtcTaxCode and Eet.EetCoID=Ctc.CtcCOID",
+    "Type of Join": "EmpTax Left Join TaxCode"
+  }
+   
+]
